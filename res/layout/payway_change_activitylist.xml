@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/pay_bg_color" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/pay_bg_color" >
+
+            <ImageView
+                android:id="@+id/w_paywaychange_iv_back2"
+                 android:layout_width="35dp"
+            android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:src="@drawable/selector_back" />
+        </RelativeLayout>
+        <!-- 定位城市 -->
+
+        <TextView
+            android:id="@+id/tv_titles2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="请选择支付方式"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_payway_changes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titlebar2"
+        android:padding="15dp" >
+    </ListView>
+
+</RelativeLayout>

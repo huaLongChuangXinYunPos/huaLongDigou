@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#01ffffff"
+    android:gravity="center_vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/coupon_item_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/liquan"
+        android:contentDescription="pic" />
+
+    <TextView
+        android:id="@+id/coupon_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/coupon_item_pic"
+        android:singleLine="true"
+        android:text="222"
+        android:layout_marginLeft="10dp"
+        android:textColor="#aaaaaa"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/coupon_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coupon_item_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/coupon_item_pic"
+        android:textColor="#ffed145b"
+        android:text="222"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/coupon_item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#ffcccc"
+        android:gravity="center"
+        android:minWidth="70dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="222"
+        android:textColor="#ff0000"
+        android:textSize="16.0sp" />
+
+</RelativeLayout>

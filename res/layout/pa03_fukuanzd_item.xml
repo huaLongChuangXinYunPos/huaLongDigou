@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#09000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/pa03_zhifuxiangqing_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sso_button_bg_normal"
+            android:padding="5dp"
+            android:text="详情"
+            android:textColor="#ff0000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/pa03_zhifubianhao_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="支付编号：234245252452352345s"
+            android:textColor="#ff444444"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/pa03_yinhang_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pa03_zhifubianhao_tv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingTop="5dp"
+            android:text="支付方式:支付宝"
+            android:textColor="#ff444444"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/pa03_jine_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pa03_yinhang_tv"
+            android:ellipsize="end"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="金额：￥30"
+            android:textColor="#ffed145b"
+            android:textSize="11.0sp" />
+
+        <TextView
+            android:id="@+id/pa03_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pa03_yinhang_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/pa03_jine_tv"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="日期：20150909"
+            android:textColor="#88000000"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

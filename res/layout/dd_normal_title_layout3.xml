@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ED4040" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#ED4040"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+         >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/selector_back"
+             />
+
+        
+    </RelativeLayout>
+    <!-- 定位城市 -->
+
+    <TextView
+        android:id="@+id/tv_titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="更新收货地址"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+     <Button
+        android:id="@+id/bt_in"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sso_button_bg_normal2"
+        android:text=" 修 改  "
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+         />
+ 
+</RelativeLayout>

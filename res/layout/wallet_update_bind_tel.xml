@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:background="@color/pay_bg_color">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+             android:background="@color/pay_bg_color" >
+
+            <ImageView
+                android:id="@+id/w_tel_iv_back_up"
+                android:layout_width="35dp"
+            android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:src="@drawable/selector_back" />
+        </RelativeLayout>
+        <!-- 定位城市 -->
+
+        <TextView
+            android:id="@+id/tv_titles_w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改绑定手机"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/pos_login_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        android:layout_margin="20dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="旧手机号："
+                android:textColor="@color/blue_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/w_tel_old_up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="10"  android:singleLine="true"
+                android:inputType="textPassword"
+                android:textSize="14sp" >
+            </EditText>
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="新手机号："
+                android:textColor="@color/blue_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/w_tel_new_up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="10"   android:singleLine="true"
+                android:inputType="textPassword"
+                android:textSize="14sp" >
+            </EditText>
+        </TableRow>
+          <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="登录密码："
+                android:textColor="@color/blue_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/w_tel_pwd_up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="10"  android:singleLine="true"
+                android:inputType="textPassword"
+                android:textSize="14sp" >
+            </EditText>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pos_login_tl"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/w_tel_ok_up"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_bg_kuai_normal"
+            android:text="提   交"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/w_tel_cancel_up"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_bg_line_normal"
+            android:text="取  消"
+            android:textColor="@color/red_text_color" />
+    </LinearLayout>
+
+</RelativeLayout>

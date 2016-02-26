@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/goods_zuo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="#ffffff"
+        android:clickable="false"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/goods_icon_lay"
+            android:layout_width="70.0dip"
+            android:layout_height="75.0dip"
+            android:layout_gravity="top"
+            android:background="#ffffffff" >
+
+            <FrameLayout
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:layout_gravity="center" >
+
+                <com.loopj.android.image.SmartImageView
+                   android:id="@+id/iv_sanlei_gt3Img"
+                    android:layout_width="70.0dip"
+                    android:layout_height="70.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_empty_page" />
+
+               
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/item_hot"
+                android:layout_width="28.0dip"
+                android:layout_height="24.0dip"
+                android:background="@drawable/scale_order_icon"
+                android:gravity="center_horizontal"
+                android:paddingTop="0.0dip"
+                android:text="特价"
+                android:textColor="#ffffffff"
+                android:textSize="10.0sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_sanlei_gtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textColor="#99000000"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

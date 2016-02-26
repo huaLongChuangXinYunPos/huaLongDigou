@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/title_home_rl_fg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ED4040" >
+
+        <RelativeLayout
+            android:id="@+id/home_rl_dingwei"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:background="#ED4040"
+            android:clickable="true"
+            android:onClick="changeLoc" >
+
+            <ImageView
+                android:id="@+id/iv_dizhi"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dizhi" />
+
+            <TextView
+                android:id="@+id/tv_mycity_homefg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_dizhi"
+                android:singleLine="true"
+                android:text="定位中..."
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_dituxuanzhe"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_mycity_homefg"
+                android:src="@drawable/dituxuanzhe" />
+        </RelativeLayout>
+        <!-- 定位城市 -->
+
+        <TextView
+            android:id="@+id/home_tv_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_home_sousuo"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:src="@drawable/abc_ic_search_api_mtrl_alpha" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_home_fg_adv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_home_rl_fg" >
+    </ListView>
+
+</RelativeLayout>

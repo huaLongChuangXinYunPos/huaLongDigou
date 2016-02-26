@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/anim_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pay_bg_color"
+        android:paddingBottom="20.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="15.0dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+             >
+
+            <ImageView
+                android:id="@+id/text_img"
+                android:layout_width="40.0dip"
+                android:layout_height="42.0dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/pay_shaoyishao"
+                android:clickable="true"
+                android:onClick="choujiangqu" />
+
+            <TextView
+                android:id="@+id/text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="扫一扫"
+                android:textColor="@color/white"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/photo_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20.0dip"
+             >
+
+            <ImageView
+                android:id="@+id/photo_img"
+                android:layout_width="40.0dip"
+                android:layout_height="43.0dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/pay_zhuanzhang"
+                android:clickable="true"
+                android:onClick="dd_go" />
+
+            <TextView
+                android:id="@+id/photo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photo_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="转   账"
+                  android:textColor="@color/white"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/camera_layout"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+
+            <ImageView
+                android:id="@+id/camera_img"
+                android:layout_width="40.0dip"
+                android:layout_height="42.0dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/pay_wall"
+                android:clickable="true"
+                android:onClick="jianshe" />
+
+            <TextView
+                android:id="@+id/camera_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/camera_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="付   款"
+                  android:textColor="@color/white"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

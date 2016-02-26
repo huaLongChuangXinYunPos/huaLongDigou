@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fujin_store_type_name"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="休闲食品"
+        android:textColor="@color/TextColorGray"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/normal_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/dd_normal_title_layout3" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="收货人：" />
+
+        <EditText
+            android:id="@+id/et_receiver_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/White"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/gray_white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="手机：" />
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/White"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/gray_white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="固话：" />
+
+        <EditText
+            android:id="@+id/et_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/White"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/gray_white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="地区：" />
+
+        <TextView
+            android:id="@+id/tv_region"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/White"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/gray_white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="街道：" />
+
+        <EditText
+            android:id="@+id/et_street"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/White"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/gray_white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="是否默认地址："
+            android:textColor="#ff0000" />
+
+        <CheckBox 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="是"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/gray_white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="18.0dip" >
+
+        
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_height="40.0dip"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="18.0dip"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:onClick="onClick"
+            android:background="@drawable/sso_button_bg_normal_solid"
+            android:text="删除收货地址" />
+    </LinearLayout>
+
+</LinearLayout>

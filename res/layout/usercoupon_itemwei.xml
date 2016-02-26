@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#09000000"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="优惠编号:"
+            android:textColor="#77000000"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/couponid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:text="1234344545"
+            android:textColor="#ffed145b"
+            android:textSize="14sp" />
+    </LinearLayout>
+       <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="订单编号:"
+            android:textColor="#77000000"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:text="1234344545"
+            android:textColor="#ffed145b"
+            android:textSize="14sp" />
+    </LinearLayout>
+       <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="优惠日期:"
+            android:textColor="#77000000"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/coupondate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:text="1234344545"
+            android:textColor="#ffed145b"
+            android:textSize="14sp" />
+    </LinearLayout>
+       <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="优惠状态:"
+            android:textColor="#77000000"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/cstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:text="1234344545"
+            android:textColor="#ffed145b"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

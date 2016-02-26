@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tts"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="#47d2b48c"
+    android:padding="0dp" >
+
+    <HorizontalScrollView
+        android:id="@+id/hsView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:scrollbars="none" >
+
+        <FrameLayout
+            android:id="@+id/flPlayBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp" >
+
+            <LinearLayout
+                android:id="@+id/llPlayback"
+                android:layout_width="1500dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="horizontal"
+                android:padding="0dp" >
+
+                <GridView
+                    android:id="@+id/gv_erlei"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:columnWidth="79dip"
+                    android:horizontalSpacing="1dp"
+                    android:padding="0dp"
+                    
+                    android:scrollbars="none"
+                    android:stretchMode="none"
+                    android:verticalSpacing="0dp" />
+            </LinearLayout>
+        </FrameLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

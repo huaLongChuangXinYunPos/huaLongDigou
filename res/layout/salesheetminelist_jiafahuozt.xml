@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/normal_title_ssm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ED4040" >
+
+        <ImageView
+            android:id="@+id/salesheet_mine_back1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/salesheet_mine_titles1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="您的订单"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/state_minesalesheet"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/normal_title_ssm"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tab_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/tab_title_pressed_color"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/tab_middle_line_color" />
+
+        <TextView
+            android:id="@+id/tab_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="未付款"
+            android:textColor="@color/tab_title_normal_color"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/tab_middle_line_color" />
+
+        <TextView
+            android:id="@+id/tab_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="未发货"
+            android:textColor="@color/tab_title_normal_color"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/tab_middle_line_color" />
+
+        <TextView
+            android:id="@+id/tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="未收货"
+            android:textColor="@color/tab_title_normal_color"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/tab_middle_line_color" />
+
+        <TextView
+            android:id="@+id/tab_3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已收货"
+            android:textColor="@color/tab_title_normal_color"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/salesheetlistmy1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btt_myorder"
+        android:layout_below="@id/state_minesalesheet" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/lssalesheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btt_myorder"
+        android:layout_below="@id/state_minesalesheet"
+        android:visibility="gone" >
+    </ListView>
+
+</RelativeLayout>

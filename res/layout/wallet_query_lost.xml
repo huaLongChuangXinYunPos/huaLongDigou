@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/w_lost_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:background="@color/pay_bg_color">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+             android:background="@color/pay_bg_color" >
+
+            <ImageView
+                android:id="@+id/losts_iv_back_wallet"
+                 android:layout_width="35dp"
+            android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:src="@drawable/selector_back" />
+        </RelativeLayout>
+        <!-- 定位城市 -->
+
+        <TextView
+            android:id="@+id/w_lost_tv_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="帐户余额"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/w_lost_now_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/w_lost_titlebar"
+        android:layout_margin="10dp"
+        android:text="当前账户余额"
+        android:textSize="16sp"
+        android:textColor="@color/grgray" />
+
+    <TextView
+        android:id="@+id/w_mylost_money_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/w_lost_now_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="00.00"
+        android:textColor="@color/blood_primary"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/w_lost_danwei_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/w_mylost_money_tv"
+        android:layout_toRightOf="@id/w_mylost_money_tv"
+        android:padding="5dp"
+        android:text="元"
+        android:textColor="@color/grgray"
+        android:textSize="16sp" />
+
+</RelativeLayout>

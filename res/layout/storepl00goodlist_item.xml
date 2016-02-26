@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants" >
+
+    <FrameLayout
+        android:id="@+id/fram_icon"
+        android:layout_width="80.0dip"
+        android:layout_height="70.0dip"
+        android:layout_gravity="top"
+        android:layout_margin="10.0dip"
+        android:background="#ffffffff" >
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/goodicon_pl_store"
+            android:layout_width="70.0dip"
+            android:layout_height="70.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_empty_page" />
+
+        <TextView
+            android:id="@+id/st_top_ranking_tv"
+            android:layout_width="28.0dip"
+            android:layout_height="24.0dip"
+            android:background="@drawable/top_tag"
+            android:gravity="center_horizontal"
+            android:paddingTop="3.0dip"
+            android:text="名"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/st_new_goods_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/brand_discount_item_status1"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_goods_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10.0dip"
+        android:layout_toRightOf="@id/fram_icon"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/dian_type_store"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/companly_approve" />
+
+        <ImageView
+            android:id="@+id/dian_type3__store"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/zan_yellow" />
+
+        <TextView
+            android:id="@+id/goodsname_pl_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text=""
+            android:textColor="#aa111111"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/allprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_goods_item"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@id/fram_icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_pirce_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="特价: ￥"
+            android:textColor="#ffed145b"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/store_saleprice_pl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#ffed145b"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/store_beforeprice_pl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="#ffa0a0a0"
+            android:textSize="12.0sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/stpl00_cart_ib"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/cart_icon_whitebg"
+        android:focusable="false" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/normal_title_layout6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#ED4040" >
+
+        <ImageView
+            android:id="@+id/iv_back_ss"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="goback"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/tv_titles_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="确认订单"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/now_buy_ss"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sso_button_bg_normal_solid"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="goxiadan"
+        android:text="提交订单"
+        android:textColor="#ffffffff"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/dingdanmingxi_ss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/now_buy_ss"
+        android:layout_below="@id/normal_title_layout6"
+        android:scrollbars="none" />
+
+</RelativeLayout>

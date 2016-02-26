@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="205dp"
+    android:layout_gravity="center_horizontal"
+    android:padding="10dp"
+    android:background="#fff"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/fram_icon"
+        android:layout_width="140.0dip"
+        android:layout_height="140.0dip"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffffff" >
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/goodicon_pl_store_gv"
+            android:layout_width="140.0dip"
+            android:layout_height="140.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_empty_page" />
+
+        <TextView
+            android:id="@+id/st_top_ranking_tv_gv"
+            android:layout_width="28.0dip"
+            android:layout_height="24.0dip"
+            android:background="@drawable/top_tag"
+            android:gravity="center_horizontal"
+            android:paddingTop="3.0dip"
+            android:text="名"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/st_new_goods_iv_gv"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/brand_discount_item_status1"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_goods_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fram_icon"
+        android:layout_alignLeft="@id/fram_icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/goodsname_pl_store_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fram_icon"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="goodsname"
+            android:textColor="#aa111111"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/allprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/ll_goods_item"
+        android:layout_alignLeft="@id/fram_icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_pirce_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="￥"
+            android:textColor="#ffed145b"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/store_saleprice_pl_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="price"
+            android:textColor="#ffed145b"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/stpl00_cart_ib_gv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/fram_icon"
+        android:background="@drawable/cart_icon_whitebg"
+        android:focusable="false" />
+
+</RelativeLayout>

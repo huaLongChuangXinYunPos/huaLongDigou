@@ -1,0 +1,244 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    tools:context="${packageName}.${activityClass}" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/rukou_unlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shop_detail_bg_default"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/had_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/userinfo_icon_user"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/order_status_user_icon" />
+
+                    <TextView
+                        android:id="@+id/userinfo_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="用户名"
+                        android:textColor="#0000ff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/homemy_loginreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_promote_background"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="login"
+                    android:text="登陆/注册"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.70000005dip"
+                android:background="@color/setting_line" />
+
+            <RelativeLayout
+                android:id="@+id/usr_info_usr_name_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@color/fuxk_base_color_white"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/usr_info_usr_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:text="会员名 : "
+                    android:textColor="@color/fuxk_base_color_black"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/usr_info_usr_member_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:text="18618105088"
+                    android:textColor="@color/fuxk_base_color_gray"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.70000005dip"
+                android:background="@color/setting_line"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/more_order_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#fff"
+                    android:paddingBottom="16.699982dip" >
+
+                    <TextView
+                        android:id="@+id/more_order_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16.699982dip"
+                        android:background="@drawable/my_order_tag"
+                        android:clickable="true"
+                        android:onClick="dingdan_go" />
+
+                    <TextView
+                        android:id="@+id/more_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/more_order_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="13.299988dip"
+                        android:text="订单"
+                        android:textColor="@color/fuxk_base_color_black"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/more_promocard_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#fff"
+                    android:paddingBottom="16.699982dip" >
+
+                    <TextView
+                        android:id="@+id/more_promocard_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16.699982dip"
+                        android:background="@drawable/my_creats_tag"
+                        android:clickable="true"
+                        android:onClick="wallet" />
+
+                    <TextView
+                        android:id="@+id/more_promocard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/more_promocard_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="13.299988dip"
+                        android:text="钱包"
+                        android:textColor="@color/fuxk_base_color_black"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/more_enjoy_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="#fff"
+                    android:paddingBottom="16.699982dip" >
+
+                    <TextView
+                        android:id="@+id/more_address_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16.699982dip"
+                        android:background="@drawable/my_collection_tag"
+                        android:clickable="true"
+                        android:onClick="lilaile" />
+
+                    <TextView
+                        android:id="@+id/more_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/more_address_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="13.299988dip"
+                        android:text="礼券"
+                        android:textColor="@color/fuxk_base_color_black"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.05dip"
+                android:background="@color/setting_line" />
+
+            <RelativeLayout
+                android:id="@+id/fg_rl_addressupdate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_list_item_bg"
+                android:clickable="true"
+                android:paddingLeft="12dp" >
+
+                <ImageView
+                    android:id="@+id/iv_xiangce"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/akb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/iv_xiangce"
+                    android:text="修改送货地址"
+                    android:textColor="#353535"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="12dp"
+                    android:background="#dadada"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/paystyle_ll_ll_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/paystyle_draw_iv_item"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bind_unselected" />
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/paystyle_pic_siv_item"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/paystyle_name_tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+           android:layout_margin="5dp"
+        android:textColor="#444444"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/payway_lostmoneys_tv_sss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+           android:layout_margin="5dp"
+        android:textColor="#444444"
+        android:textSize="13sp" />
+
+</LinearLayout>

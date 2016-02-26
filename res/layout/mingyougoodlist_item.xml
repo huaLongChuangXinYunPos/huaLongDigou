@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <FrameLayout
+        android:id="@+id/fram_icon"
+        android:layout_width="80.0dip"
+        android:layout_height="70.0dip"
+        android:layout_gravity="top"
+        android:layout_margin="10.0dip"
+        android:background="#ffffffff" >
+
+        <ImageView
+            android:id="@+id/goodicon"
+            android:layout_width="70.0dip"
+            android:layout_height="65.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_empty_page" />
+
+        <TextView
+            android:id="@+id/top_ranking_tv"
+            android:layout_width="28.0dip"
+            android:layout_height="24.0dip"
+            android:background="@drawable/top_tag"
+            android:gravity="center_horizontal"
+            android:paddingTop="3.0dip"
+            android:text="特产"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+       android:layout_marginTop="10.0dip"
+        android:layout_toRightOf="@id/fram_icon"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="可口可乐300ml"
+        android:textColor="#aa111111"
+        android:textSize="14.0sp" />
+
+    <LinearLayout
+        android:id="@+id/allprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goods_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/fram_icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_pirce_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="特价: ￥"
+            android:textColor="#ffed145b"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/goods_sale_price_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="10元"
+            android:textColor="#ffed145b"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/goods_before_pric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:text="￥12"
+            android:textColor="#ffa0a0a0"
+            android:textSize="12.0sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goods_promote_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/allprice"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/fram_icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_pirce_type"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="北京京客隆超市"
+            android:textColor="#ff909090"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/goods_sale_price_yuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="1003.30km"
+            android:textColor="#ff909090"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_cart"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:src="@drawable/selector_gouwuche" />
+
+</RelativeLayout>

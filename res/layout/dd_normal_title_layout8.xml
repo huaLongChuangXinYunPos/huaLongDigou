@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ED4040" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#ED4040"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+         >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:onClick="goback"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/selector_back"
+             />
+
+        
+    </RelativeLayout>
+   
+
+    <TextView
+        android:id="@+id/tv_titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="游戏"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    
+ 
+</RelativeLayout>

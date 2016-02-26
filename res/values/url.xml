@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  -->
+    <string name="servlet_search">/servlet/Search</string>
+    <string name="servlet_spstorest">/servlet/SPStoreST</string>
+    <string name="servlet_spstoretype">/servlet/SPStoreType</string>
+     <string name="url_sppl01">/servlet/SPGoods</string>
+    <string name="servlet_firstsheet">/servlet/FirstSheet</string>
+    <string name="servlet_coupon">/servlet/Coupon</string>
+    <string name="servlet_mansouman">/servlet/ManShouMian</string>
+    <string name="wallet_rsa">/servlet/RSAService</string>
+    <string name="wallet_wtransfer">/servlet/Transfer</string>
+    <string name="wallet_buyeraccountmanager">/servlet/BuyerAccountManage</string>
+    <string name="wallet_buyreg">/servlet/BuyerRegister</string>
+    <string name="wallet_buymanager">/servlet/BuyerAccountManage</string>
+    <string name="servlet_famousspecialty">/servlet/FamousSpecialty</string>
+    <string name="servlet_walletrefund">/Servlet/WalletRefund</string>
+    <string name="servlet_walletquery">/servlet/WQuery</string>
+    <string name="servlet_walletpay">/servlet/Payment</string>
+    <string name="servlet_wpubkey">/servlet/WPubKey</string>
+    <string name="servlet_wallettransfer">/Servlet/WalletTransfer</string>
+    <string name="url_userneeds">/userneedsservlet</string>
+    <string name="url_storebaojia">/storebaojiaservlet</string>
+    <string name="url_pc01">/servlet/ProductCategory</string>
+    <string name="url_sppc01">/servlet/SPProductCategory</string>
+    <string name="url_pc02">/servlet/ProductCategory</string>
+    <string name="url_pc03">/servlet/ProductCategory</string>
+    <string name="url_advs">/servlet/Advert</string>
+    <string name="url_st01">/servlet/Store</string>
+    <string name="url_stty">/servlet/StoreType</string>
+    <string name="url_pl01">/servlet/Goods</string>
+    <string name="url_pd01">PD/PD01</string>
+    <string name="url_od01">/servlet/SaleSheet</string>
+    <string name="url_od02">/servlet/SaleSheetDetail</string>
+    <string name="url_login">/servlet/Login</string>
+    <string name="url_ad01">/servlet/UserAddress</string>
+    <string name="servlet_paysheet">/servlet/PaySheet</string>
+    <string name="servlet_paystyle">/servlet/PayStyle</string>
+    <string name="servlet_paysheetdetail">/servlet/PaySheetDetail</string>
+    <string name="url_register">RG/RG01</string>
+    <string name="url_version">version</string>
+    <string name="url_addresslist">addresslist</string>
+    <string name="url_home">home</string>
+    <string name="url_addresssave">addresssave</string>
+    <string name="url_addressdelete">addressdelete</string>
+    <string name="url_addressdefault">addressdefault</string>
+    <string name="url_limitbuy">limitbuy</string>
+    <string name="url_newproduct">newproduct</string>
+    <string name="url_hotproduct">hotproduct</string>
+    <string name="url_brand">brand</string>
+    <string name="url_logout">logout</string>
+    <string name="url_cartdatasession">cartdatasession</string>
+    <string name="url_productcollect">product/collect</string>
+    
+    <string name="url_storeevaluation">/servlet/StoreEvaluation</string>
+
+</resources>

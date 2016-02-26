@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/all_list_item_bg"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/ssd_id"
+        style="@style/text_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textColor="#333333"
+        android:textSize="@dimen/call_record_list_time" />
+
+    <TextView
+        android:id="@+id/ssd_stname"
+        style="@style/text_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ssd_id"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#333333"
+        android:textSize="@dimen/call_record_list_phone_belong_to" />
+
+    <TextView
+        android:id="@+id/ssd_befprice"
+        style="@style/text_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ssd_stname"
+        android:layout_margin="3dp"
+        android:textColor="#555555"
+        android:textSize="@dimen/call_record_list_phone_belong_to" />
+
+    <TextView
+        android:id="@+id/ssd_firstsheet"
+        style="@style/text_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ssd_befprice"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#555555"
+        android:textSize="@dimen/call_record_list_time" />
+
+    <TextView
+        android:id="@+id/ssd_overcut"
+        style="@style/text_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ssd_firstsheet"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#555555"
+        android:textSize="@dimen/call_record_list_time" />
+
+    <TextView
+        android:id="@+id/ssd_coupon"
+        style="@style/text_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ssd_overcut"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#555555"
+        android:textSize="@dimen/call_record_list_time" />
+
+    <TextView
+        android:id="@+id/ssd_peisong"
+        style="@style/text_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ssd_coupon"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#555555"
+        android:textSize="@dimen/call_record_list_time" />
+
+    <TextView
+        android:id="@+id/ssd_flastmoney"
+        style="@style/text_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ssd_peisong"
+        android:layout_margin="3dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff5555"
+        android:textSize="@dimen/call_record_list_time" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ssd_flastmoney"
+        android:background="@drawable/dingdan_fenxianfu" >
+    </ImageView>
+
+</RelativeLayout>

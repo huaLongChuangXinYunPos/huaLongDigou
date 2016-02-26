@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/call_record_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="fill_parent"
+    android:background="#ffffffff"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/call_record_leftpart"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:background="@drawable/all_list_item_bg" >
+
+        <FrameLayout
+            android:id="@+id/call_record_goto_detail_layout"
+            android:layout_width="55.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:gravity="right" >
+
+            <ImageButton
+                android:id="@+id/call_record_goto_detail"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center"
+                android:background="@drawable/free_call"
+                android:layout_margin="10dp"
+               android:focusable="false"
+               android:clickable="false"
+                android:padding="10.0dip" />
+
+           
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@id/call_record_goto_detail_layout"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25.0dip" >
+
+                <LinearLayout
+                    android:id="@+id/record_up_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/call_name"
+                            style="@style/text_big"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:singleLine="true"
+                            android:text="高总高总高总高总"
+                            android:textColor="#ff0f0f0f"
+                            android:textSize="@dimen/call_record_name_size" />
+                    </LinearLayout>
+
+                      </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/record_up_layout"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/call_phone"
+                        style="@style/text_middle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13367679087"
+                        android:textColor="@color/record_list_phone"
+                        android:textSize="@dimen/call_record_list_phone_belong_to" />
+
+                    
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

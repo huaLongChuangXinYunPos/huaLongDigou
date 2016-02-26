@@ -1,0 +1,312 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#ffffff"
+        tools:context="${packageName}.${activityClass}" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_home_img"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/home_text_vpdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/app_name"
+            android:textColor="@color/TextColorGray"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/point_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/text_layout0"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:onClick="go_fujindianpu" >
+
+            <ImageView
+                android:id="@+id/text_img"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/fujindianpu_xiao" />
+
+            <TextView
+                android:id="@+id/text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="附近店铺"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/photo_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:onClick="dingdan_go" >
+
+            <ImageView
+                android:id="@+id/photo_img"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/my_order_tag" />
+
+            <TextView
+                android:id="@+id/photo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photo_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="我的订单"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/camera_layout22"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:onClick="wallet" >
+
+            <ImageView
+                android:id="@+id/camera_img22"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/my_creats_tag" />
+
+            <TextView
+                android:id="@+id/camera_tv22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/camera_img22"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="i 钱包"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/camera_layout2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:onClick="cuxiaohuodong" >
+
+            <ImageView
+                android:id="@+id/camera_img2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/search_hot" />
+
+            <TextView
+                android:id="@+id/camera_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/camera_img2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="促销专场"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/text_layout2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:onClick="mingyou" >
+
+            <ImageView
+                android:id="@+id/text_img2"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/my_collection_tag" />
+
+            <TextView
+                android:id="@+id/text_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_img2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="名优特产"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/photo_layouthldgs"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:onClick="digou" >
+
+            <ImageView
+                android:id="@+id/fg_main_hldg"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/center_myprofit" />
+
+            <TextView
+                android:id="@+id/photo_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fg_main_hldg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="华隆嘀购"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+       
+
+        <RelativeLayout
+            android:id="@+id/camera_layoutlilaile1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:onClick="lilaile" >
+
+            <ImageView
+                android:id="@+id/fg_main_lilaile1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/liquan" />
+
+            <TextView
+                android:id="@+id/camera_tv21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fg_main_lilaile1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="礼来了"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/camera_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:onClick="shaoyishao" >
+
+            <ImageView
+                android:id="@+id/camera_img"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/my_scale_tag" />
+
+            <TextView
+                android:id="@+id/camera_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/camera_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="顾客收单"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="#22000000" />
+
+    <RelativeLayout
+        android:id="@+id/index_second_kill_5_6_1_ayout_title_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/index_second_kill_5_6_1_ayout_title_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/index_second_kill_5_6_1_ayout_title_tv_right"
+            android:text="更多"
+            android:textColor="#88000000" />
+    </RelativeLayout>
+
+</LinearLayout>

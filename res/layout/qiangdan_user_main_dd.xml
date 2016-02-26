@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/iv_passfor_qiangdan_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ED4040" >
+
+        <ImageView
+            android:id="@+id/qiangdan_user_main_back_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/qiangdan_user_main_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/qiangdan_user_main_woxiangyao_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5fe"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/qiangdan_user_main_back_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/ic_cart_n" />
+
+        <TextView
+            android:id="@+id/qiangdan_user_main_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="我想要"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:id="@+id/qiangdan_user_main_chabaojia_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5fe"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/qiangdan_user_main_back_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/ic_hpay" />
+
+        <TextView
+            android:id="@+id/qiangdan_user_main_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="查报价"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:id="@+id/qiangdan_user_main_zainaer_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5fe"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/qiangdan_user_main_back_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/g04_wuliu_car" />
+
+        <TextView
+            android:id="@+id/qiangdan_user_main_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="在哪儿"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:id="@+id/qiangdan_user_main_tejia_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5fe"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/qiangdan_user_main_back_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/g14" />
+
+        <TextView
+            android:id="@+id/qiangdan_user_main_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="附近特价"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#dddddd" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/normal_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/dd_normal_title_layout19" />
+
+    <LinearLayout
+        android:id="@+id/btt_myorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/bt_coupon_could"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg_judihuibianyuanjiao_nor"
+            android:onClick="zzzx"
+            android:text="可领取"
+            android:textColor="#1E90FF"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/bt_coupon_had"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg_baidihuibianyuanjiao_nor"
+            android:onClick="lsdd"
+            android:text="已领取"
+            android:textColor="#1E90FF"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/cpoupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btt_myorder"
+        android:layout_below="@id/normal_title_layout" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/coupon_empty_state_iv"
+        android:layout_width="140dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/coupon_empty_stat"
+        android:visibility="gone" />
+
+</RelativeLayout>

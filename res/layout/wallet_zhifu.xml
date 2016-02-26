@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/pay_bg_color" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/pay_bg_color" >
+
+            <ImageView
+                android:id="@+id/w_zhi_iv_back"
+               android:layout_width="35dp"
+            android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:src="@drawable/selector_back" />
+        </RelativeLayout>
+        <!-- 定位城市 -->
+
+        <TextView
+            android:id="@+id/tv_titles_w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="支付页面"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/pos_login_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        android:layout_margin="20dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="选择钱包："
+                android:textColor="@color/blue_text_color"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/w_zhifu_spinner"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                android:entries="@array/dianpu"
+                 />
+
+            
+        </TableRow>
+         <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="对方账户："
+                android:textColor="@color/blue_text_color"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/w_zhifu_tousername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"  android:singleLine="true"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+
+            
+        </TableRow>
+         <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="金额："
+                android:textColor="@color/blue_text_color"
+                android:textSize="12sp" />
+
+             <EditText
+                android:id="@+id/w_zhifu_tomoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"  android:singleLine="true"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="支付密码："
+                android:textColor="@color/blue_text_color"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/w_zhifu_myzhipass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"  android:singleLine="true"
+                android:inputType="number"
+                android:textSize="14sp" >
+
+            </EditText>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pos_login_tl"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/w_zhi_ok_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_orange_selector"
+            android:text="确   认"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/w_zhi_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_bg_line_normal"
+            android:text="取  消"
+            android:textColor="@color/red_text_color" />
+    </LinearLayout>
+
+</RelativeLayout>

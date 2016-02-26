@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar_0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ED4040" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#ED4040" >
+
+            <Button
+                android:id="@+id/bt_comment_back"
+                style="@null"
+                 android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="开始评价"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_margin="5dp"
+        android:background="@color/gray_white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="评       分："
+            android:textSize="14.0sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_pingjia_zhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.hlcxdg.digou.utils.ui.FlatRadioButton
+                android:id="@+id/rg_pingjia_you"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dip"
+                android:background="#0000"
+                android:text="优"
+                flatui:fl_dotMargin="1dp"
+                flatui:fl_size="20dip" />
+
+            <com.hlcxdg.digou.utils.ui.FlatRadioButton
+                android:id="@+id/rg_pingjia_liang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dip"
+                android:background="#0000"
+                android:checked="true"
+                android:text="良"
+                flatui:fl_dotMargin="1dp"
+                flatui:fl_size="20dip" />
+
+            <com.hlcxdg.digou.utils.ui.FlatRadioButton
+                android:id="@+id/rg_pingjia_zhong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dip"
+                android:background="#0000"
+                android:text="中"
+                flatui:fl_dotMargin="1dp"
+                flatui:fl_size="20dip" />
+
+            <com.hlcxdg.digou.utils.ui.FlatRadioButton
+                android:id="@+id/rg_pingjia_cha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dip"
+                android:background="#0000"
+                android:text="差"
+                flatui:fl_dotMargin="1dp"
+                flatui:fl_size="20dip" />
+        </RadioGroup>
+
+        <RatingBar
+            android:id="@+id/ratingbar_comment_add"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_margin="5dp"
+        android:background="@color/gray_white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="评价内容："
+            android:textSize="14.0sp" />
+
+        <EditText
+            android:id="@+id/et_add_comment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/search_bj_sousuokuan_default"
+            android:gravity="top|left"
+            android:minLines="3"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_margin="5dp"
+        android:background="@color/gray_white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="18.0dip" >
+
+        <Button
+            android:id="@+id/btn_tijiao_add_pingjia"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="18.0dip"
+            android:background="@drawable/sso_button_bg_normal_solid"
+            android:onClick="addAddr"
+            android:text="提交"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

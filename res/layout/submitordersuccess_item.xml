@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30.0dip"
+    android:layout_marginRight="30.0dip"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/White"
+        android:paddingLeft="13.299988dip"
+        android:paddingRight="13.299988dip" >
+
+        <TextView
+            android:id="@+id/submitordersuccess_item_orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:text="dingdanhao"
+            android:textColor="#ff333333" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.30000007dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffcccccc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:paddingLeft="13.299988dip"
+        android:paddingRight="13.299988dip" >
+
+        <TextView
+            android:id="@+id/submitordersuccess_item_price_title"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:text="应付款"
+            android:textColor="#ff333333" />
+
+        <TextView
+            android:id="@+id/submitordersuccess_item_price"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="right"
+              android:text="120"
+            android:textColor="#ff333333" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.30000007dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffcccccc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/White"
+        android:paddingLeft="13.299988dip"
+        android:paddingRight="13.299988dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/submitordersuccess_item_paystyle_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                 android:text="付款方式"
+                android:textColor="#ff333333" />
+
+            <TextView
+                android:id="@+id/submitordersuccess_item_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:text="支付宝"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#ff333333" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.30000007dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffcccccc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="6.0dip"
+         >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:orientation="horizontal"
+             >
+
+            <TextView
+                android:id="@+id/submitordersuccess_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的包裹预计将在 "
+                android:textColor="#ff333333" />
+
+            <TextView
+                android:id="@+id/ordertime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffdd1355"
+                 android:text="24小时内 "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orderend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 发出"
+                android:textColor="#ff333333" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

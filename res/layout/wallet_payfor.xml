@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/pay_bg_color" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/pay_bg_color" >
+
+            <ImageView
+                android:id="@+id/w_payfor_iv_back"
+                 android:layout_width="35dp"
+            android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:src="@drawable/selector_back" />
+        </RelativeLayout>
+        <!-- 定位城市 -->
+
+        <TextView
+            android:id="@+id/tv_titles_w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="钱包支付"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <com.hlcxdg.digou.activity.wallet.PasswordInputView2
+        android:id="@+id/w_payforpassword_text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/titlebar"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="25dp"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="0dp" />
+
+    <LinearLayout
+        android:id="@+id/w_bt_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/w_payforpassword_text"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/w_payfor_ok_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_orange_selector"
+            android:text="确认支付"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/pos_login_tal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/w_bt_all"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sso_shape_button_normal_nm"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <TableRow
+            android:id="@+id/tableRow93"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="订单："
+                android:textColor="@color/blue_text_color"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="订单号："
+                android:textColor="@color/blue_text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:text="4109888848384756"
+                android:textColor="@color/blue_text_color"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow332"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="金额："
+                android:textColor="@color/blue_text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:text="34345658848384756"
+                android:textColor="@color/blue_text_color"
+                android:textSize="14sp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

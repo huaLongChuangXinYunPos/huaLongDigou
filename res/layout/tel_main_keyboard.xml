@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/title_include"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/TelTitleBg" >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_back"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="免费电话"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bind_go"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sso_button_bg_normal1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="绑定手机"
+            android:textColor="#ffffff"
+            android:textSize="14.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ii_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/call_shuru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fen"
+            android:background="#99ffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tel_num"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/noborder"
+                android:gravity="left"
+                android:padding="5.0dip"
+                android:textColor="#ff333333"
+                android:textSize="30.0sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ed_del"
+                    android:layout_width="45.0dip"
+                    android:layout_height="45.0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:clickable="true"
+                    android:src="@drawable/ic_del" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@id/fen"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_above="@+id/anjian"
+            android:background="@color/blue"
+            android:paddingTop="0.0dip" />
+
+        <ImageView
+            android:id="@+id/bt_callon"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="2.0dip"
+            android:background="@drawable/button_blue_call"
+            android:clickable="true"
+            android:src="@drawable/ic_dial"
+            android:text="拨    打"
+            android:textColor="#ffffff"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@id/anjian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bt_callon"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="#99ffffff" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <ImageButton
+                    android:id="@+id/num1"
+                    style="@style/DialtactsDialpadButtonStyle"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dial_num_1" />
+                <!--  -->
+
+                <ImageButton
+                    android:id="@+id/num2"
+                    style="@style/DialtactsDialpadButtonStyle"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dial_num_2" />
+
+                <ImageButton
+                    android:id="@+id/num3"
+                    style="@style/DialtactsDialpadButtonStyle"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dial_num_3" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <ImageButton
+                    android:id="@+id/num4"
+                    style="@style/DialtactsDialpadButtonStyle"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dial_num_4" />
+
+                <ImageButton
+                    android:id="@+id/num5"
+                    style="@style/DialtactsDialpadButtonStyle"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dial_num_5" />
+
+                <ImageButton
+                    android:id="@+id/num6"
+                    style="@style/DialtactsDialpadButtonStyle"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dial_num_6" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <ImageButton
+                    android:id="@+id/num7"
+                    style="@style/DialtactsDialpadButtonStyle"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dial_num_7" />
+
+                <ImageButton
+                    android:id="@+id/num8"
+                    style="@style/DialtactsDialpadButtonStyle"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dial_num_8" />
+
+                <ImageButton
+                    android:id="@+id/num9"
+                    style="@style/DialtactsDialpadButtonStyle"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dial_num_9" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <ImageButton
+                    android:id="@+id/num_x"
+                    style="@style/DialtactsDialpadButtonStyle"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dial_num_star" />
+
+                <ImageButton
+                    android:id="@+id/num0"
+                    style="@style/DialtactsDialpadButtonStyle"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dial_num_0" />
+
+                <ImageButton
+                    android:id="@+id/num_j"
+                    style="@style/DialtactsDialpadButtonStyle"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dial_num_pound" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

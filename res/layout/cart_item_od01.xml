@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cart_add_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_marginBottom="5.0dip"
+    android:layout_marginTop="5.0dip"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dingdan_fenxianfu" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            
+            android:id="@+id/storename_ssitem_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.0dip"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="乐尚超市"
+            android:textColor="#666666"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/storeprice_ssitem_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:text="总价：￥100"
+            android:textColor="@color/product_text_3c3c46"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+  
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#09000000" >
+    </ImageView>
+
+</LinearLayout>

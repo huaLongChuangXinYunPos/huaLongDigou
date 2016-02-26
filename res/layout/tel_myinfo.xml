@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/title_include"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/TelTitleBg" >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_back"
+            android:clickable="true"
+            android:onClick="goback" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_include"
+        android:orientation="vertical" >
+
+     
+        <RelativeLayout
+            android:id="@+id/info_bind"
+            android:layout_width="fill_parent"
+            android:layout_height="55.5dip"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/bind_go2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/sso_button_bg_normal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="绑定手机"
+                android:textColor="@drawable/sso_button_text_normal"
+                android:textSize="14.0dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/bind_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="用户帐号:..."
+                    android:textColor="#99000000"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/bind_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="已绑定的手机：..."
+                    android:textColor="#66000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+       
+
+        <RelativeLayout
+            android:id="@+id/info_balance"
+            android:layout_width="fill_parent"
+            android:layout_height="55.5dip"
+            android:background="#ffffff" android:layout_marginTop="15dp"
+            android:clickable="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="话费余额：..."
+                    android:textColor="#99000000"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/endtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="有效期到：..."
+                    android:textColor="#66000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/chongzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/sso_button_bg_normal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="快速充值"
+                android:textColor="@drawable/sso_button_text_normal"
+                android:textSize="14.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

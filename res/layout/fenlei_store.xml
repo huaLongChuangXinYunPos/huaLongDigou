@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ED4040" >
+
+        <ImageView
+            android:id="@+id/backfenleistore"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="goback"
+            android:paddingLeft="0dp"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/storenames_fenlei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:text="test"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/st_fenlei_getcomm"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/storenames_fenlei"
+            android:background="@drawable/dituxuanzhe" />
+
+        <LinearLayout
+            android:id="@+id/index_saomiao_zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_homeback_pl02"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:clickable="true"
+                android:onClick="tomainpage"
+                android:src="@drawable/shouyewhite" />
+
+            <ImageButton
+                android:id="@+id/i_search_stfenlei"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/store_tab_s"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/index_saomiao_stfenlei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/index_scaner"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/mid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/top"
+        layout="@layout/fenleimid" />
+
+    <RelativeLayout
+        android:id="@+id/st_fenlei_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_centerVertical="true"
+        android:background="#ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/st_fenlei_search"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_book_info"
+            android:gravity="center_vertical"
+            android:hint="请输入商品名"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/st_index_sousuo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignRight="@id/st_fenlei_search"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/store_tab_s"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+</RelativeLayout>

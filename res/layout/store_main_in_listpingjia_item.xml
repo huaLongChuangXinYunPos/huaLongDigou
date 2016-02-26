@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/chat_room_headview"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="买家"
+        android:src="@drawable/user" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/chat_room_headview"
+        android:background="@drawable/search_bj_sousuokuan_default"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/listitem_st_pingjia_fen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优"
+            android:textColor="#99000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listitem_st_pingjia_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listitem_st_pingjia_fen"
+            android:layout_marginLeft="0sp"
+            android:singleLine="false"
+            android:text="非常好还us个覅哦人工is而韩国io射日弓is阿房宫佛is二极管覅接哦IF奖哦热io啊设计风格撒答复哦哎"
+            android:textColor="#88000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listitem_st_pingjia_riqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/listitem_st_pingjia_content"
+            android:layout_marginRight="0sp"
+            android:text="2015-09-09"
+            android:textColor="#66000000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

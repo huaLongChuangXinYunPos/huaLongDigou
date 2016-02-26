@@ -1,0 +1,380 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ED4040" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#ED4040" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/selector_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#ED4040" >
+        </RelativeLayout>
+        <!-- 定位城市 -->
+
+        <TextView
+            android:id="@+id/tv_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="乐尚超市"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/fenlei_titles"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/titlebar"
+        android:layout_margin="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/f3" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/titlebar"
+        android:layout_toRightOf="@id/fenlei_titles"
+        android:background="#47d2b48c"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:background="@drawable/drawable_bottom"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="牛奶/乳品"
+                android:textColor="#ff0000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="冲调/咖啡" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="饮料" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="酒" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fenlei_titles"
+        android:layout_marginLeft="0dp"
+        android:background="#47d2b48c"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:background="@drawable/left"
+                android:gravity="center"
+                android:text="奶/饮料/酒"
+                android:textColor="#ff0000" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="休闲食品" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="生鲜食品" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="个人护理" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="家庭清洁" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="母婴天地" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="文体" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="油炸食品" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="即食食品" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="家居" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:background="#22000000" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/goods_lie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalScrollView1"
+        android:layout_toRightOf="@id/scrollView1"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <LinearLayout
+            android:id="@+id/good_store1_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_pinpai_pic_store1"
+                android:layout_width="60dp"
+                android:onClick="jinru"
+                android:clickable="true"
+                android:layout_height="70.0dip"
+                android:layout_gravity="center_horizontal"
+                 />
+
+            <TextView
+                android:id="@+id/tv_pinpai_name_store1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:text="纯牛奶"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/good_store2_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_pinpai_pic_store2"
+                android:layout_width="60dp"
+                android:layout_height="70.0dip"
+                android:layout_gravity="center_horizontal"
+                 />
+
+            <TextView
+                android:id="@+id/tv_pinpai_name_store2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:text="儿童牛奶"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/good_store3_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_pinpai_pic_store3"
+                android:layout_width="60dp"
+                android:layout_height="70.0dip"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/tv_pinpai_name_store3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:text="豆奶/豆浆"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

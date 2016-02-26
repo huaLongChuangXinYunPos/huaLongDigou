@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/normal_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/dd_normal_title_layout4" />
+
+    <RelativeLayout
+        android:id="@+id/price_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/fuxk_base_color_white" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_alignParentTop="true"
+            android:background="@color/fuxk_base_divide_line_color" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/sso_button_bg_normal"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="总价：￥0元" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cart_jiesuan_submit"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sso_button_bg_normal_solid"
+            android:gravity="center"
+            android:onClick="jiesuan"
+            android:text="结算"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/cartlist1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/price_layout"
+        android:layout_below="@id/normal_title_layout"
+        android:background="#ffffff" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/cartlist_empty"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:src="@drawable/cart_empty_state_iv" />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <FrameLayout
+        android:id="@+id/fram_icon"
+        android:layout_width="80.0dip"
+        android:layout_height="70.0dip"
+        android:layout_gravity="top"
+        android:layout_margin="10.0dip"
+        android:background="#ffffffff" >
+
+        <ImageView
+            android:id="@+id/goodicon"
+            android:layout_width="70.0dip"
+            android:layout_height="65.0dip"
+            android:layout_gravity="center"
+          />
+
+        <TextView
+            android:id="@+id/top_ranking_tv"
+            android:layout_width="28.0dip"
+            android:layout_height="24.0dip"
+            android:background="@drawable/top_tag"
+            android:gravity="center_horizontal"
+            android:paddingTop="3.0dip"
+            android:text="特价"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15.0dip"
+        android:layout_toRightOf="@id/fram_icon"
+        android:ellipsize="end"
+        android:lineSpacingExtra="6.0dip"
+        android:lines="1"
+        android:text="可口可乐300ml"
+        android:textColor="#aa111111"
+        android:textSize="14.0sp" />
+
+    <LinearLayout
+        android:id="@+id/allprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fram_icon"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/fram_icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_pirce_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="单价:"
+            android:textColor="#66000000"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/goods_sale_price_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="10元"
+            android:textColor="#ffed145b"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/goods_before_pric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:text="数量:"
+            android:textColor="#ffa0a0a0"
+            android:textSize="12.0sp"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/goods_sale_price_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="#ffed145b"
+            android:textSize="14.0sp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goods_promote_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="20.0dip"
+        android:layout_above="@+id/allprice"
+        android:layout_toRightOf="@id/fram_icon"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

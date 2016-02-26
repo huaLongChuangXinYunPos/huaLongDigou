@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_addrlist"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/normal_title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/dd_normal_title_layout2" />
+
+        <ListView
+            android:id="@+id/lv_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="0.1dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/normal_title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/dd_normal_title_layout2" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="收货人："
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/et_receiver_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_margin="5dp"
+            android:background="@color/gray_white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="手机号："
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_margin="5dp"
+            android:background="@color/gray_white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="收货地址："
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/et_addr"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/White"
+                android:gravity="top|left"
+                android:minLines="3"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_margin="5dp"
+            android:background="@color/gray_white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="是否默认地址："
+                android:textColor="#ff0000"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_morenaddr"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/collection_check_nor"
+                android:clickable="true"
+                android:onClick="morendizhi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="是"
+                android:textColor="#ff0000"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_margin="5dp"
+            android:background="@color/gray_white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="18.0dip" >
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="18.0dip"
+                android:background="@drawable/sso_button_bg_normal_solid"
+                android:onClick="saveAddr"
+                android:text="保存地址"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_addoneAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@drawable/sso_button_bg_normal_solid"
+        android:text="新增地址"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

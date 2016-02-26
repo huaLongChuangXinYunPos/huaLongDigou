@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffffff">
+
+    <RelativeLayout
+        android:id="@+id/title_binds"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#1E90FF" >
+
+        <ImageView
+            android:id="@+id/bind_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/selector_back"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="绑定手机号"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/body_binds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_binds"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/sso_shape_button_normal_nm"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tishi1"
+            android:textSize="14sp"
+            android:textColor="#aaff0000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.请输入本手机的手机号" />
+
+        <TextView
+             android:id="@+id/tishi2"
+             android:layout_marginTop="5dp"
+              android:textColor="#aaff0000"
+             android:layout_below="@id/tishi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2.请关闭骚扰骚扰电话拦截功能" />
+
+        <EditText
+            android:id="@+id/ed_bind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tishi2"
+            android:layout_marginTop="10dp"
+            android:hint="请输入要绑定的手机号"
+            android:textSize="14sp"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/bt_bind"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_below="@id/ed_bind"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/sso_button_bg_normal_solid"
+            android:text="绑    定"
+            android:textColor="#ffffff"
+            android:textSize="20.0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

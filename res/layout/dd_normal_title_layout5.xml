@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="#ED4040" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:onClick="goback"
+            android:src="@drawable/selector_back" />
+    </RelativeLayout>
+    <!-- 定位城市 -->
+
+    <include
+        android:id="@+id/in_erlei"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/titlebar_back"
+        layout="@layout/item_erlei1" />
+
+</RelativeLayout>

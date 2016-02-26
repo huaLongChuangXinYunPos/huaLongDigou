@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/leibie_main_all"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title_leibie"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#22ffffff" >
+
+        <ImageView
+            android:id="@+id/leibie_title_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="goback"
+            android:paddingLeft="0dp"
+            android:src="@drawable/back_nm2" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/index_saomiao_zone"
+            android:layout_toRightOf="@id/leibie_title_back"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <EditText
+                android:id="@+id/fenlei_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_book_info"
+                android:gravity="center_vertical"
+                android:hint="请输入商品名或类别"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/index_sousuo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignRight="@+id/fenlei_search"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:src="@drawable/store_tab_s" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/index_saomiao_zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/index_saomiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick=""
+                android:src="@drawable/index_scaner" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_alignParentBottom="true"
+            android:background="#22000000" />
+    </RelativeLayout>
+
+    <RelativeLayout  
+        android:layout_below="@id/rl_title_leibie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/loading_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_user"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/zhendonghua" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fenlei_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/fenlei_titles"
+                android:layout_width="90dp"
+                android:layout_height="39dp"
+                android:layout_margin="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/f3" />
+
+            <ListView
+                android:id="@+id/yilei"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/fenlei_titles"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="#47d2b48c"
+                android:scrollbars="none" >
+            </ListView>
+
+            <include
+                android:id="@+id/in_erlei"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@id/yilei" />
+
+            <RelativeLayout
+                android:id="@+id/loading_bg3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/in_erlei"
+                android:layout_toRightOf="@id/yilei"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_user3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/zhendonghua" />
+            </RelativeLayout>
+
+            <com.hlcxdg.digou.activity.MGridView
+                android:id="@+id/gv_sanlei"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/in_erlei"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/yilei"
+                android:horizontalSpacing="15dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+  <!---->
+</RelativeLayout>

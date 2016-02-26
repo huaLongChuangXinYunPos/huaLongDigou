@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/mynormal_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/dd_normal_title_layout10" />
+
+    <ListView
+        android:id="@+id/ming_list_goodlist1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0.1dp"
+        android:divider="@drawable/list_divider"
+        android:clickable="true"
+        android:layout_below="@id/mynormal_title_layout"
+        android:scrollbars="none" >
+    </ListView>
+  <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:onClick="tocart"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/cart_icon_redbg" />
+    
+</RelativeLayout>

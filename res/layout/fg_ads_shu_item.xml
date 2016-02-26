@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:padding="5dp" >
+    <com.loopj.android.image.SmartImageView
+            android:id="@+id/fg_advimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_empty_page" />
+   
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout 
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ED4040" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#ED4040"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+         >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:clickable="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/selector_back"
+             />
+
+        
+    </RelativeLayout>
+    <!-- 定位城市 -->
+
+    <TextView
+        android:id="@+id/tv_titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="滴购登陆"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    
+ 
+</RelativeLayout>
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@id/titlebar"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="请输入用户名"
+        android:paddingLeft="35dp"
+        android:textSize="14sp" >
+
+        <requestFocus />
+    </EditText>
+    
+
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:paddingLeft="35dp"
+        android:textSize="14sp" 
+        android:layout_below="@id/et_username"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/et_username"
+        android:layout_alignTop="@id/et_username"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/login_account" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ed_password"
+        android:layout_alignTop="@id/ed_password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/login_pwd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_password"
+        android:orientation="horizontal" >
+
+         <Button
+             android:id="@+id/bt_login"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:layout_marginBottom="15dp"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="5dp"
+             android:layout_marginTop="15dp"
+             android:layout_weight="1.0"
+             android:background="@drawable/btn_orange_selector"
+             android:text="登陆"
+             android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/bt_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/btn_go_shopping_normal"
+        android:text="注册"
+        android:textColor="#ffffff" />
+        
+    </LinearLayout>
+    
+</RelativeLayout>

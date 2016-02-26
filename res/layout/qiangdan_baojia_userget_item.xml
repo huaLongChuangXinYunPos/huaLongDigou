@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/normal_lvhead_qd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/normal_title_qd"
+        android:background="#f4f4ff" >
+
+        <TextView
+            android:id="@+id/qd_chabaojia_item_stname"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="用户名"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/qd_chabaojia_item_price"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="价格"
+            android:ellipsize="end"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/qd_chabaojia_item_juli"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="距离"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/qd_chabaojia_item_baojiastatus"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.4"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="配送"
+            android:background="#33ff00"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+  

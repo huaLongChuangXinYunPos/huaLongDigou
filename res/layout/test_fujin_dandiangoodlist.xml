@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar_back"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ED4040" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#ED4040" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:onClick="goback"
+                android:src="@drawable/selector_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#ED4040" >
+
+            <ImageView
+                android:id="@+id/iv_homeback_pl02"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:onClick="tomainpage"
+                android:src="@drawable/shouyewhite" />
+        </RelativeLayout>
+        <!-- 定位城市 -->
+
+        <TextView
+            android:id="@+id/storename_goodslist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/goods_lie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar_back"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <LinearLayout
+            android:id="@+id/paixu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_quanbu"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/rank_price_down_divider_normal"
+                android:gravity="center"
+                android:text="价格"
+                android:textColor="#ff222222"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_jiage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/rank_price_down_divider_normal"
+                android:gravity="center"
+                android:text="距离"
+                android:textColor="#ff222222"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_jiage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/rank_price_down_divider_normal"
+                android:gravity="center"
+                android:text="品牌"
+                android:textColor="#ff222222"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_change_view"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="#d1d1d1"
+                android:clickable="true"
+                android:gravity="center"
+                android:src="@drawable/grid_normal" />
+        
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/st_lvgoodslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/goods_lie"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="0.1dp" >
+    </ListView>
+
+    <GridView
+        android:background="#f1f1f1"
+        android:id="@+id/st_gvgoodslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/goods_lie"
+        android:numColumns="2"
+        android:verticalSpacing="2dp" 
+        android:horizontalSpacing="2dp"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </GridView>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="5dp"
+        android:clickable="true"
+        android:onClick="tocart"
+        android:src="@drawable/cart_icon_redbg" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:onClick="toTopIndex"
+        android:src="@drawable/seektop" />
+
+</RelativeLayout>

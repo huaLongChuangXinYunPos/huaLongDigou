@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="#ffffff" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#2340f0"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="设置网络"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="HLIP" />
+
+        <EditText
+            android:id="@+id/hl_ip"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:ems="10" android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textSize="12sp" >
+
+            <requestFocus />
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="HLPORT" />
+
+        <EditText
+            android:id="@+id/hl_port"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="12sp" />
+
+    </TableRow>
+
+    
+     <TableRow>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="WALLETIP" />
+
+        <EditText
+            android:id="@+id/w_ip"
+            android:layout_width="190dp"
+            android:layout_height="30dp"  android:inputType="phone"
+            android:layout_weight="1"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:textSize="12sp" >
+
+            
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="WALLETPORT" />
+
+        <EditText
+            android:id="@+id/w_port"  android:inputType="number"
+            android:layout_width="190dp"
+            android:layout_height="30dp"   android:layout_weight="1"
+            android:textSize="12sp" />
+    </TableRow>
+    
+    
+     <TableRow>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="OSSIP" />
+
+        <EditText
+            android:id="@+id/os_ip"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"  android:inputType="phone"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:textSize="12sp" >
+
+            
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="OSSPORT" />
+
+        <EditText
+            android:id="@+id/os_port"
+            android:layout_width="190dp"  android:inputType="number"
+            android:layout_height="30dp"   android:layout_weight="1"
+            android:textSize="12sp" />
+    </TableRow>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="120dip"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"  android:layout_weight="1"
+            android:background="@drawable/btn_go_shopping_normal"
+            android:padding="5dp"
+            android:text="确定"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="120dip"
+            android:layout_height="40dp"  android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_go_shopping_normal"
+            android:padding="5dp"
+            android:text="取消"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</TableLayout>
