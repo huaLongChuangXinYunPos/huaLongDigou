@@ -149,7 +149,7 @@
                     android:src="@drawable/zhendonghua" />
             </RelativeLayout>
 
-            <com.hlcxdg.digou.activity.MGridView
+            <com.hl_zhaoq.digou.activity.MGridView
                 android:id="@+id/gv_sanlei"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

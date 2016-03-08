@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hlcxdg.digou"
+    package="com.hl_zhaoq.digou"
     android:versionCode="1"
     android:versionName="hl_o2o_1.0" >
 
@@ -47,7 +47,7 @@
         android:targetSdkVersion="17" />
 
     <application
-        android:name="com.hlcxdg.digou.HlmainApplication"
+        android:name="com.hl_zhaoq.digou.HlmainApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -75,42 +75,42 @@
         </service>
 
         <activity
-            android:name="com.hlcxdg.digou.activity.MainActivity"
+            android:name="com.hl_zhaoq.digou.activity.MainActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.hlcxdg.digou.test.TestFujindianpuActivity"
+            android:name="com.hl_zhaoq.digou.test.TestFujindianpuActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.db.map.dao.TestActivity"
+            android:name="com.hl_zhaoq.digou.db.map.dao.TestActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.goods.GoodsListPL02Activity"
+            android:name="com.hl_zhaoq.digou.activity.goods.GoodsListPL02Activity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <!-- dianhuagongnengqu -->
         <activity
-            android:name="com.hlcxdg.digou.tel.activity.TelActivity"
+            android:name="com.hl_zhaoq.digou.tel.activity.TelActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.tel.activity.BindActivity"
+            android:name="com.hl_zhaoq.digou.tel.activity.BindActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.hlcxdg.digou.tel.activity.TonghuaActivity"
+            android:name="com.hl_zhaoq.digou.tel.activity.TonghuaActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
@@ -119,7 +119,7 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.hlcxdg.digou.activity.user.LoginActivity"
+            android:name="com.hl_zhaoq.digou.activity.user.LoginActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
@@ -129,7 +129,7 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.hlcxdg.digou.activity.goods.TuijianGoodActivity"
+            android:name="com.hl_zhaoq.digou.activity.goods.TuijianGoodActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
@@ -149,17 +149,17 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.hlcxdg.digou.activity.address.AddressActivity"
+            android:name="com.hl_zhaoq.digou.activity.address.AddressActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.hlcxdg.digou.activity.goods.MingyouGoodsActivity"
+            android:name="com.hl_zhaoq.digou.activity.goods.MingyouGoodsActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.hlcxdg.digou.activity.goods.GoodsListPL01Activity"
+            android:name="com.hl_zhaoq.digou.activity.goods.GoodsListPL01Activity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
@@ -169,27 +169,27 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.hlcxdg.digou.activity.salesheet.OrderActivity"
+            android:name="com.hl_zhaoq.digou.activity.salesheet.OrderActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.hlcxdg.digou.activity.goods.GoodSingleActivity"
+            android:name="com.hl_zhaoq.digou.activity.goods.GoodSingleActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.hlcxdg.digou.activity.salesheet.SalesheetActivity"
+            android:name="com.hl_zhaoq.digou.activity.salesheet.SalesheetActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.hlcxdg.digou.activity.salesheet.SalesDetailActivity"
+            android:name="com.hl_zhaoq.digou.activity.salesheet.SalesDetailActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.hlcxdg.digou.activity.user.RegActivity"
+            android:name="com.hl_zhaoq.digou.activity.user.RegActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
@@ -201,50 +201,50 @@
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.salesheet.SaleSheetMineActivity"
+            android:name="com.hl_zhaoq.digou.activity.salesheet.SaleSheetMineActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.salesheet.SaleSheetDetailMineActivity"
+            android:name="com.hl_zhaoq.digou.activity.salesheet.SaleSheetDetailMineActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.storeac.StoreSingleGoodlistActivity"
+            android:name="com.hl_zhaoq.digou.activity.storeac.StoreSingleGoodlistActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.storeac.StoreGoodsXqActivity"
+            android:name="com.hl_zhaoq.digou.activity.storeac.StoreGoodsXqActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.storeac.StoreSingleFenleiActivity"
+            android:name="com.hl_zhaoq.digou.activity.storeac.StoreSingleFenleiActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.storeac.StoreXListActivity"
+            android:name="com.hl_zhaoq.digou.activity.storeac.StoreXListActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.StoreListActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.StoreListActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.storeac.StoreListActivity"
+            android:name="com.hl_zhaoq.digou.activity.storeac.StoreListActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
@@ -268,55 +268,55 @@
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.storeac.StoreCommentReadSE02Ac"
+            android:name="com.hl_zhaoq.digou.activity.storeac.StoreCommentReadSE02Ac"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.storeac.StoreMainInPingjia"
+            android:name="com.hl_zhaoq.digou.activity.storeac.StoreMainInPingjia"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.storeac.StoreCommentWriteSE01Ac"
+            android:name="com.hl_zhaoq.digou.activity.storeac.StoreCommentWriteSE01Ac"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.comment.MyCommentWriteSS"
+            android:name="com.hl_zhaoq.digou.activity.comment.MyCommentWriteSS"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.payway.GetAllPayway"
+            android:name="com.hl_zhaoq.digou.activity.payway.GetAllPayway"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.payway.PaywayPA01"
+            android:name="com.hl_zhaoq.digou.activity.payway.PaywayPA01"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.payway.PaywayPA02"
+            android:name="com.hl_zhaoq.digou.activity.payway.PaywayPA02"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.payway.PaywayPA03"
+            android:name="com.hl_zhaoq.digou.activity.payway.PaywayPA03"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.payway.PaywayPA04"
+            android:name="com.hl_zhaoq.digou.activity.payway.PaywayPA04"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
@@ -349,84 +349,84 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.salesheet.SSPayStyleAty"
+            android:name="com.hl_zhaoq.digou.activity.salesheet.SSPayStyleAty"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
 
         <!-- qiangdangongnengqu -->
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.MapbaiduActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.MapbaiduActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.UserAddqiangdanActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.UserAddqiangdanActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.UserMiaoqiangMap"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.UserMiaoqiangMap"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.UserSkanWuliuqdActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.UserSkanWuliuqdActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.UserZhaoTeJiaqiangdanActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.UserZhaoTeJiaqiangdanActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.UserChaBaoJiaqdActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.UserChaBaoJiaqdActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.UserWoXiangYaoqdActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.UserWoXiangYaoqdActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.UserMainqiangdanActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.UserMainqiangdanActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.StoreWoBaoJiaMap"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.StoreWoBaoJiaMap"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.StoreTeJiaHaiBaoqiangdanActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.StoreTeJiaHaiBaoqiangdanActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.StoreMainqiangdanActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.StoreMainqiangdanActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.UserPeisongListActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.UserPeisongListActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.StorechadingdanqiangdanActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.StorechadingdanqiangdanActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.qiagndan.FenleiActivity"
+            android:name="com.hl_zhaoq.digou.activity.qiagndan.FenleiActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.goods.QdGoodsListPL01Activity"
+            android:name="com.hl_zhaoq.digou.activity.goods.QdGoodsListPL01Activity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
@@ -434,32 +434,32 @@
         <!-- 钱包  功能区 -->
 
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.OutWalletZhifuActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.OutWalletZhifuActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.WalletZhifuActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.WalletZhifuActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.QueryLostActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.QueryLostActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.SaoyisaoActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.SaoyisaoActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.WalletTelActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.WalletTelActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.WalletPPwdActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.WalletPPwdActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
@@ -469,53 +469,53 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.PayWaysChangeActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.PayWaysChangeActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.WalletLPwdActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.WalletLPwdActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.LostActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.LostActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.WalletRegisterActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.WalletRegisterActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.WalletLoginActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.WalletLoginActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.WalletLoginDDActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.WalletLoginDDActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.WalletMainActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.WalletMainActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.ZhuanzhangActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.ZhuanzhangActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="com.hlcxdg.digou.activity.wallet.BackupMoneyActivity"
+            android:name="com.hl_zhaoq.digou.activity.wallet.BackupMoneyActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <!-- 单独购物车 -->
         <activity
-            android:name="com.hlcxdg.digou.fragment.CartActivity"
+            android:name="com.hl_zhaoq.digou.fragment.CartActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="adjustPan" >
@@ -531,57 +531,57 @@
         <!-- 优惠功能区 -->
 
         <activity
-            android:name="com.hlcxdg.digou.activity.coupon.CouponActivity"
+            android:name="com.hl_zhaoq.digou.activity.coupon.CouponActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.coupon.YouhuiquanActivity"
+            android:name="com.hl_zhaoq.digou.activity.coupon.YouhuiquanActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.goods.MM01Activity"
+            android:name="com.hl_zhaoq.digou.activity.goods.MM01Activity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.goods.CPQueryActivity"
+            android:name="com.hl_zhaoq.digou.activity.goods.CPQueryActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <!-- 促销模块cuxiaorukou -->
         <activity
-            android:name="com.hlcxdg.digou.activity.cuxiao.STStoreListActivity"
+            android:name="com.hl_zhaoq.digou.activity.cuxiao.STStoreListActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.cuxiao.GoodSingleActivity"
+            android:name="com.hl_zhaoq.digou.activity.cuxiao.GoodSingleActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.cuxiao.STStoreSingleFenleiActivity"
+            android:name="com.hl_zhaoq.digou.activity.cuxiao.STStoreSingleFenleiActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.hlcxdg.digou.activity.cuxiao.StoreSingleGoodlistActivity"
+            android:name="com.hl_zhaoq.digou.activity.cuxiao.StoreSingleGoodlistActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <!-- 促销模块 -->
         <activity
-            android:name="com.hlcxdg.digou.activity.salesheet.CouponPaywayActivity"
+            android:name="com.hl_zhaoq.digou.activity.salesheet.CouponPaywayActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >
@@ -589,7 +589,7 @@
 
         <!-- 搜索模块 -->
         <activity
-            android:name="com.hlcxdg.digou.activity.search.SearchActivity"
+            android:name="com.hl_zhaoq.digou.activity.search.SearchActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan" >
@@ -597,13 +597,13 @@
 
  <!-- 收货地址模块 -->
         <activity
-            android:name="com.hlcxdg.digou.activity.address.MineAddressActivity"
+            android:name="com.hl_zhaoq.digou.activity.address.MineAddressActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan" >
         </activity>
          <activity
-            android:name="com.hlcxdg.digou.activity.address.MineAddressAddActivity"
+            android:name="com.hl_zhaoq.digou.activity.address.MineAddressAddActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan" >
@@ -611,14 +611,14 @@
         
          
            <activity
-            android:name="com.hlcxdg.digou.activity.city.CityStoreActivity"
+            android:name="com.hl_zhaoq.digou.activity.city.CityStoreActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <!-- 系统口 -->
         <activity
-            android:name="com.hlcxdg.digou.activity.SplashActivity"
+            android:name="com.hl_zhaoq.digou.activity.SplashActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustPan" >

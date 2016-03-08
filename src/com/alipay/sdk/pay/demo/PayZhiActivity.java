@@ -31,18 +31,18 @@ import android.widget.Toast;
 import com.alipay.apmobilesecuritysdk.face.APSecuritySdk.InitResultListener;
 import com.alipay.sdk.app.PayTask;
 import com.google.gson.Gson;
-import com.hlcxdg.digou.R;
-import com.hlcxdg.digou.activity.address.AddressActivity;
-import com.hlcxdg.digou.activity.goods.GoodSingleActivity;
-import com.hlcxdg.digou.activity.payway.PaywayPA01;
-import com.hlcxdg.digou.activity.payway.PaywayPA01.PA01And02AsynTask;
-import com.hlcxdg.digou.activity.salesheet.SaleSheetMineActivity;
-import com.hlcxdg.digou.bean.PAXiangdan;
-import com.hlcxdg.digou.bean.PAZongdan;
-import com.hlcxdg.digou.constant.ConstantValue;
-import com.hlcxdg.digou.net.NetUtil;
-import com.hlcxdg.digou.utils.PromptManager;
-import com.hlcxdg.digou.vo.RequestVo;
+import com.hl_zhaoq.digou.activity.address.AddressActivity;
+import com.hl_zhaoq.digou.activity.goods.GoodSingleActivity;
+import com.hl_zhaoq.digou.activity.payway.PaywayPA01;
+import com.hl_zhaoq.digou.activity.payway.PaywayPA01.PA01And02AsynTask;
+import com.hl_zhaoq.digou.activity.salesheet.SaleSheetMineActivity;
+import com.hl_zhaoq.digou.bean.PAXiangdan;
+import com.hl_zhaoq.digou.bean.PAZongdan;
+import com.hl_zhaoq.digou.constant.ConstantValue;
+import com.hl_zhaoq.digou.net.NetUtil;
+import com.hl_zhaoq.digou.utils.PromptManager;
+import com.hl_zhaoq.digou.vo.RequestVo;
+import com.hl_zhaoq.digou.R;
 
 public class PayZhiActivity extends FragmentActivity implements OnClickListener {
 

@@ -14,7 +14,7 @@
         android:textAppearance="?attr/DialogTitleAppearance"
         android:textColor="#73BDF2" />
 
-    <com.hlcxdg.digou.utils.spotdialog.ProgressLayout
+    <com.hl_zhaoq.digou.utils.spotdialog.ProgressLayout
         android:id="@+id/progress"
         android:layout_width="@dimen/progress_width"
         android:layout_height="wrap_content"

@@ -2,8 +2,8 @@ package com.alipay.sdk.pay.demo;
 
 import java.math.BigDecimal;
 
-import com.hlcxdg.digou.R;
-import com.hlcxdg.digou.constant.ConstantValue;
+import com.hl_zhaoq.digou.constant.ConstantValue;
+import com.hl_zhaoq.digou.R;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

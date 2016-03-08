@@ -37,7 +37,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.droid.MyLetterListView.OnTouchingLetterChangedListener;
-import com.hlcxdg.digou.R;
+import com.hl_zhaoq.digou.R;
 
 public class Activity01 extends Activity implements OnScrollListener {
 	private BaseAdapter adapter;

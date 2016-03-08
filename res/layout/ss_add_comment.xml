@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
-            <com.hlcxdg.digou.utils.ui.FlatRadioButton
+            <com.hl_zhaoq.digou.utils.ui.FlatRadioButton
                 android:id="@+id/rg_pingjia_you"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                 flatui:fl_dotMargin="1dp"
                 flatui:fl_size="20dip" />
 
-            <com.hlcxdg.digou.utils.ui.FlatRadioButton
+            <com.hl_zhaoq.digou.utils.ui.FlatRadioButton
                 android:id="@+id/rg_pingjia_liang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
                 flatui:fl_dotMargin="1dp"
                 flatui:fl_size="20dip" />
 
-            <com.hlcxdg.digou.utils.ui.FlatRadioButton
+            <com.hl_zhaoq.digou.utils.ui.FlatRadioButton
                 android:id="@+id/rg_pingjia_zhong"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                 flatui:fl_dotMargin="1dp"
                 flatui:fl_size="20dip" />
 
-            <com.hlcxdg.digou.utils.ui.FlatRadioButton
+            <com.hl_zhaoq.digou.utils.ui.FlatRadioButton
                 android:id="@+id/rg_pingjia_cha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

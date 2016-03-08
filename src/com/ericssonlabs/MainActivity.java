@@ -1,7 +1,7 @@
 package com.ericssonlabs;
 
 import com.google.zxing.WriterException;
-import com.hlcxdg.digou.R;
+import com.hl_zhaoq.digou.R;
 import com.zxing.activity.CaptureActivity;
 import com.zxing.encoding.EncodingHandler;
 

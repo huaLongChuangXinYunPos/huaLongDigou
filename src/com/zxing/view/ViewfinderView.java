@@ -31,7 +31,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.google.zxing.ResultPoint;
-import com.hlcxdg.digou.R;
+import com.hl_zhaoq.digou.R;
 import com.zxing.camera.CameraManager;
 
 /**
